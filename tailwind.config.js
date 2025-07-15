@@ -19,6 +19,7 @@ export default {
         'bg10': "url('./src/assets/transitionBlocks/bg10.jpg')",
       },
       screens: {
+      'phone': '480px',
       'tablet': '769px',
       'laptop': '1024px',
       'desktop': '1280px',

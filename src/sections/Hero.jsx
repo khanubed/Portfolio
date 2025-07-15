@@ -22,15 +22,20 @@ const Hero = () => {
       <div id='hero' className="bg-black text-white relative min-h-screen flex flex-col items-center">
       
       {/* ----------------HEADING ---------------------*/}
-      <div className="absolute max-tablet:top-[2%]  top-0 w-full flex justify-center select-none">        
+      <div className="absolute max-tablet:top-[2%]  top-0 w-full flex justify-center select-none
+      max-phone:top-[6%]">        
       <h1 className="text-[140px] flex md:gap-8
-                     max-tablet:flex-col max-tablet:text-[100px] 2xl:text-[170px] republica mt-5 tracking-wide font-bold text-center  bg-gradient-to-b  from-gray-500 to-white bg-clip-text text-transparent">
+                     max-tablet:flex-col max-tablet:gap-6 max-tablet:text-[100px] 2xl:text-[170px]
+                     max-phone:text-[80px] 
+
+                     republica mt-5 tracking-wide font-bold text-center  bg-gradient-to-b  from-gray-500 to-white bg-clip-text text-transparent">
         <span>HI, I'M </span><span className='max-tablet:-mt-12 max-sm:tracking-widest'>UBED</span> 
       </h1>
       </div>
       {/* ----------------CENTER CONTENT--------------- */}
-      <div className=" flex gap-4 justify-between px-[160px] absolute z-50 w-full mt-[200px] top-[15%]
-                      max-tablet:bottom-[15%] max-tablet:flex-col max-tablet:justify-end">
+      <div className=" flex gap-4 justify-between px-[160px] absolute z-40 w-full mt-[200px] top-[15%]
+                      max-tablet:bottom-[18%] max-tablet:flex-col max-tablet:justify-end 
+                      max-phone:px-[60px]">
         <div className="flex justify-center items-center">
       <Passion></Passion>
         </div>
@@ -39,7 +44,8 @@ const Hero = () => {
                       max-tablet:pr-0">
       <motion.a
         href="#contact"
-        className="px-10 flex-1 py-4 rounded-full  border-2 font-thin text-lg text-white shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-red-300 transition-all"
+        className="px-8 flex-1 py-4 rounded-full  border-2 font-thin text-lg text-white text-center max-w-[200px] shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-red-300 transition-all
+        max-phone:text-xs max-phone:px-2"
         style={{
         background: "linear-gradient(30deg, #000000 , #ec4899, #6366f1, #f59e42)",
         display: "inline-block",
@@ -65,11 +71,14 @@ const Hero = () => {
       
       {/* BITMOJI CENTER */}
       <div className="absolute w-full  flex justify-center top-[10%] transform 
-                      max-tablet:top-[14%] ">
+                      max-tablet:top-[22%] max-tablet:z-50 
+                      max-phone:rotate-2
+                       ">
       <motion.img
       src={bitmoji}
       alt="Bitmoji"
-      className="w-auto h-[450px] 2xl:h-[500px] max-tablet:h-[500px] mt-20  aspect-auto rounded-full shadow-lg"
+      className="w-auto z-50 h-[450px] 2xl:h-[500px] max-tablet:h-[450px] mt-20  aspect-auto rounded-full shadow-lg
+      max-phone:h-[320px] max-phone:mt-16 "
       style={{ pointerEvents: 'auto' }}
       whileTap={() => {
         const { x, y } = getRandomRepel();

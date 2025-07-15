@@ -88,7 +88,7 @@ const Skills = () => {
           target: parentRef,
           offset: ["23% end", "23% center"]
       });
-      const javascriptX = useTransform(javascriptScrollY, [0, 1], [1300, 150]);
+      const javascriptX = useTransform(javascriptScrollY, [0, 1], [1300, 0]);
       const javascriptRotate = useTransform(javascriptScrollY, [0, 1], [-35,0]);
       const javascriptOpacity = useTransform(javascriptScrollY, [0, 1], [0, 1]);
 
@@ -97,7 +97,7 @@ const Skills = () => {
           target: parentRef,
           offset: ["28% end", "28% center"]
       });
-      const tailwindX = useTransform(tailwindScrollY, [0, 1], [1300, 285]);
+      const tailwindX = useTransform(tailwindScrollY, [0, 1], [1300, 0]);
       const tailwindRotate = useTransform(tailwindScrollY, [0, 1], [-35,15]);
       const tailwindOpacity = useTransform(tailwindScrollY, [0, 1], [0, 1]);
 
@@ -106,7 +106,7 @@ const Skills = () => {
           target: parentRef,
           offset: ["33% end", "33% center"]
       });
-      const photoshopX = useTransform(photoshopScrollY, [0, 1], [1300, 420]);
+      const photoshopX = useTransform(photoshopScrollY, [0, 1], [1300, 0]);
       const photoshopRotate = useTransform(photoshopScrollY, [0, 1], [-35,0]);
       const photoshopOpacity = useTransform(photoshopScrollY, [0, 1], [0, 1]);
 
@@ -115,7 +115,7 @@ const Skills = () => {
           target: parentRef,
           offset: ["38% end", "38% center"]
       });
-      const mongoX = useTransform(mongoScrollY, [0, 1], [1300, 555]);
+      const mongoX = useTransform(mongoScrollY, [0, 1], [1300, 0]);
       const mongoRotate = useTransform(mongoScrollY, [0, 1], [-35,0]);
       const mongoOpacity = useTransform(mongoScrollY, [0, 1], [0, 1]);
 
@@ -124,7 +124,7 @@ const Skills = () => {
           target: parentRef,
           offset: ["43% end", "43% center"]
       });
-      const expressX = useTransform(expressScrollY, [0, 1], [1300, 690]);
+      const expressX = useTransform(expressScrollY, [0, 1], [1300, 0]);
       const expressRotate = useTransform(expressScrollY, [0, 1], [-35,0]);
       const expressOpacity = useTransform(expressScrollY, [0, 1], [0, 1]);
 
@@ -133,7 +133,7 @@ const Skills = () => {
           target: parentRef,
           offset: ["48% end", "48% center"]
       });
-      const reactX = useTransform(reactScrollY, [0, 1], [1300, 825]);
+      const reactX = useTransform(reactScrollY, [0, 1], [1300, 0]);
       const reactRotate = useTransform(reactScrollY, [0, 1], [-35,0]);
       const reactOpacity = useTransform(reactScrollY, [0, 1], [0, 1]);
 
@@ -142,7 +142,7 @@ const Skills = () => {
           target: parentRef,
           offset: ["53% end", "53% center"]
       });
-      const nodejsX = useTransform(nodejsScrollY, [0, 1], [1300, 960]);
+      const nodejsX = useTransform(nodejsScrollY, [0, 1], [1300, 0]);
       const nodejsRotate = useTransform(nodejsScrollY, [0, 1], [-35,0]);
       const nodejsOpacity = useTransform(nodejsScrollY, [0, 1], [0, 1]);
 
@@ -217,7 +217,7 @@ const Skills = () => {
                       src={javascript}
                       alt="brain"
                       transition={{ duration: 0.6, ease: "easeIn" }}
-                      className=" absolute    left-100 w-[1/5] h-auto md:w-[120px] md:h-auto m-4 pointer-events-none select-none"
+                      className=" absolute    left-[12%] w-[1/5] h-auto md:w-[10%] md:h-auto m-4 pointer-events-none select-none"
                       style={{ x: javascriptX, rotate: javascriptRotate , y: parallaxY , opacity:javascriptOpacity}}
                   /></div>
           <div className='sticky  top-[42%]'>              
@@ -226,7 +226,7 @@ const Skills = () => {
                       src={tailwind}
                       alt="brain"
                       transition={{ duration: 0.6, ease: "easeIn" }}
-                      className=" absolute    left-100 w-[180px] h-auto md:w-[120px] md:h-auto m-4 pointer-events-none select-none"
+                      className=" absolute    left-[23%] w-[180px] h-auto md:w-[10%] md:h-auto m-4 pointer-events-none select-none"
                       style={{ x: tailwindX, rotate: tailwindRotate , y: parallaxY ,opacity:tailwindOpacity  }}
                   /></div>
           <div className='sticky  top-[42%]'>              
@@ -235,7 +235,7 @@ const Skills = () => {
                       src={photoshop}
                       alt="brain"
                       transition={{ duration: 0.6, ease: "easeIn" }}
-                      className=" absolute    left-100 w-[180px] h-auto md:w-[120px] md:h-auto m-4 pointer-events-none select-none"
+                      className=" absolute    left-[33%] w-[180px] h-auto md:w-[10%] md:h-auto m-4 pointer-events-none select-none"
                       style={{ x: photoshopX, rotate: photoshopRotate , y: parallaxY ,opacity:photoshopOpacity  }}
                   /></div>
           <div className='sticky  top-[42%]'>              
@@ -244,7 +244,7 @@ const Skills = () => {
                       src={mongo}
                       alt="brain"
                       transition={{ duration: 0.6, ease: "easeIn" }}
-                      className=" absolute    left-100 w-[180px] h-auto md:w-[120px] md:h-auto m-4 pointer-events-none select-none"
+                      className=" absolute    left-[44%] w-[180px] h-auto md:w-[10%] md:h-auto m-4 pointer-events-none select-none"
                       style={{ x: mongoX, rotate: mongoRotate , y: parallaxY ,opacity:mongoOpacity  }}
                   /></div>
 
@@ -254,7 +254,7 @@ const Skills = () => {
                       src={express}
                       alt="brain"
                       transition={{ duration: 0.6, ease: "easeIn" }}
-                      className=" absolute    left-100 w-[180px] h-auto md:w-[120px] md:h-auto m-4 pointer-events-none select-none"
+                      className=" absolute    right-[33%] w-[180px] h-auto md:w-[10%] md:h-auto m-4 pointer-events-none select-none"
                       style={{ x: expressX, rotate: expressRotate , y: parallaxY ,opacity:expressOpacity  }}
                   /></div> 
 
@@ -264,7 +264,7 @@ const Skills = () => {
                       src={react}
                       alt="brain"
                       transition={{ duration: 0.6, ease: "easeIn" }}
-                      className=" absolute    left-100 w-[180px] h-auto md:w-[120px] md:h-auto m-4 pointer-events-none select-none"
+                      className=" absolute    right-[23%] w-[180px] h-auto md:w-[10%] md:h-auto m-4 pointer-events-none select-none"
                       style={{ x: reactX, rotate: reactRotate , y: parallaxY ,opacity:reactOpacity  }}
                   /></div>  
 
@@ -274,7 +274,7 @@ const Skills = () => {
                       src={nodejs}
                       alt="brain"
                       transition={{ duration: 0.6, ease: "easeIn" }}
-                      className=" absolute    left-100 w-[180px]  h-auto md:w-[120px] md:h-auto m-4 pointer-events-none select-none"
+                      className=" absolute    right-[12%] w-[180px]  h-auto md:w-[10%] md:h-auto m-4 pointer-events-none select-none"
                       style={{ x: nodejsX, rotate: nodejsRotate , y: parallaxY ,opacity:nodejsOpacity  }
                         
                     }

@@ -18,7 +18,8 @@ const Passion = () => {
     }, []);
 
     return (
-        <p className='uppercase w-[1/4] flex flex-col items-center text-sm md:text-sm font-thin text-gray-200 leading-relaxed'>
+        <p className='uppercase w-[1/4] flex flex-col items-center text-sm md:text-sm font-thin text-gray-200 leading-relaxed 
+        max-phone:text-xs'>
             
             <span className=' font-semibold' style={{ display: "inline-block", minWidth: 120 }}>A passionate{" "}
                 <AnimatePresence mode="wait">

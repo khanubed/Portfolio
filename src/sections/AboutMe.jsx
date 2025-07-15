@@ -113,20 +113,92 @@ const AboutMe = () => {
     );
 
     return (<>
-        <section id="about" ref={parentRef} className="relative flex flex-col items-center justify-center h-[115vh] pt-[0px] py-10 px-4 bg-black text-white overflow-hidden">
+        <section id="about" ref={parentRef} className="relative max-tablet:hidden flex flex-col items-center justify-center h-[115vh] pt-[0px] py-10 px-4 bg-black text-white overflow-hidden">
             {/* Animated Corner Elements */}
             <motion.img
                 ref={bubbleRef}
                 src={Bubble}
                 alt="Bubble"
-                className="absolute top-[120px] left-10 w-[170px] h-[170px] md:w-[200px] md:h-[200px] m-4 pointer-events-none select-none"
+                className="absolute left-10 top-[20%]  w-[12%] aspect-square m-4 pointer-events-none select-none
+                            "
                 style={{ x: bubbleX , y: parallaxY }}
             />
             <motion.img
                 ref={diceRef}
                 src={Dice}
                 alt="Dice"
-                className="absolute top-[120px] right-10 w-[170px] h-[170px] md:w-[200px] md:h-[200px] m-4 pointer-events-none select-none"
+                className="absolute top-[24%]  w-[14%] aspect-square right-10 m-4 pointer-events-none select-none"
+                style={{ x: diceX, rotate: diceRotate , y: parallaxY}}
+            />
+            <motion.img
+                ref={heartRef}
+                src={Heart}
+                alt="Heart"
+                className="absolute bottom-10 left-8 w-[150px] h-[150px] md:w-[210px] md:h-[210px] m-4 pointer-events-none select-none"
+                style={{ x: heartX, rotate: heartRotate , y: parallaxY }}
+            />
+            <motion.img
+                ref={diamondRef}
+                src={Diamond}
+                alt="Diamond"
+                className="absolute bottom-5 right-0 w-[180px] h-[180px] md:w-[250px] md:h-[250px] m-4 pointer-events-none select-none"
+                style={{ x: diamondX, rotate: diamondRotate , y: parallaxY }}
+            />
+
+            <motion.div
+                ref={contentRef}
+                className="w-full max-w-3xl min-h-screen mx-auto text-center bg-transparent rounded-2xl shadow-lg p-8 space-y-6"
+                style={{ opacity: contentOpacity, y: contentY }}
+            >
+                <motion.h2
+                    ref={headingRef}
+                    className="text-[64px] mt-[50px] md:text-[110px] republica font-bold bg-gradient-to-b from-gray-400 to-white bg-clip-text text-transparent mx-auto tracking-wider transition-colors"
+                    style={{ opacity: headingOpacity }}
+                    whileHover={{
+                        color: "#000",
+                        WebkitTextStroke: "2px #e5e7eb",
+                        background: "none",
+                        WebkitBackgroundClip: "unset",
+                        WebkitTextFillColor: "unset"
+                    }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                >
+                    ABOUT ME
+                </motion.h2>
+                <div className="text-md  md:text-xl font-light text-white leading-relaxed">
+                    {paragraphs.map((text, idx) => (
+                        <motion.p
+                            key={idx}
+                            ref={paraRefs[idx]}
+                            className="mb-4"
+                            style={{
+                                opacity: paraOpacities[idx],
+                                x: paraXs[idx]
+                            }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                        >
+                            {text}
+                        </motion.p>
+                    ))}
+                </div>
+            </motion.div>
+        <div className='w-full h-[100px] bottom-0 bg-black'></div>    
+        </section>
+        <section id="about" ref={parentRef} className="relative tablet:hidden flex flex-col items-center justify-center h-[115vh] pt-[0px] py-10 px-4 bg-black text-white overflow-hidden">
+            {/* Animated Corner Elements */}
+            <img
+                
+                src={Bubble}
+                alt="Bubble"
+                className="absolute top-[120px] left-[5%] w-[170px] h-[170px] md:w-[200px] md:h-[200px] m-4 pointer-events-none select-none
+                            max-phone:h-[100px] max-phone:w-[100px]"
+                
+            />
+            <img
+                
+                src={Dice}
+                alt="Dice"
+                className="absolute top-[120px] right-[5%] -  rotate-45  w-[170px] h-[170px] md:w-[200px] md:h-[200px] m-4 pointer-events-none select-none"
                 style={{ x: diceX, rotate: diceRotate , y: parallaxY}}
             />
             <motion.img
