@@ -20,7 +20,7 @@ export default {
       },
       screens: {
       'phone': '480px',
-      'tablet': '769px',
+      'tablet': '770px',
       'laptop': '1024px',
       'desktop': '1280px',
       '3xl': '1600px'

@@ -30,7 +30,7 @@ const App = () => {
     return () => lenis.destroy() // clean up on unmount
   }, [])
   return (
-    <><div className='bg-black w-full'>
+    <><div className='bg-black  w-screen max-tablet:overflow-x-hidden '>
       <NavBar></NavBar>
       <MouseFollower />
       <Hero />
@@ -43,8 +43,9 @@ const App = () => {
       
       
      
-      </div><Contact></Contact>
+      <Contact></Contact>
       <Footer></Footer>
+      </div>
     </>
     
   )

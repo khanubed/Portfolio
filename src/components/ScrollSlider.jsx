@@ -1,6 +1,4 @@
 import React from 'react'
-import transitionBlock from '../assets/elements/transition-blocks.png'
-
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 const ScrollSlider = () => {
@@ -54,16 +52,12 @@ const ScrollSlider = () => {
           animate={{ x: ['0%', '-100%'] }}
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
         >
-          <div className='h-full block1 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block2 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block3 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block4 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block5 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block6 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block7 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block8 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block9 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
-          <div className='h-full block10 rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0'></div>
+          {items.map((_, i) => (
+            <div
+              key={`row2-${i}`}
+              className={`h-full rounded-xl bg-slate-100 w-[350px] flex-grow-0 flex-shrink-0 ${'block'+(i+1)}`}
+            />
+          ))}
         </motion.div>
       </div>
 

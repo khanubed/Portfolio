@@ -9,7 +9,7 @@ const FooterBlinker = () => {
   ];
 
   return (
-    <section className="w-full m-0 h-[25vh] flex min-sm:flex-col justify-evenly">
+    <section className="w-screen m-0 h-[25vh]  flex max-tablet:flex-col max-tablet:h-auto max-tablet:gap-10 max-tablet:pl-[22px] justify-evenly">
       {/* Top row */}
       <div className="flex w-full justify-evenly">
         {[0, 1, 2].map((colIdx) => (

@@ -150,8 +150,8 @@ const Skills = () => {
 
       
 
-  return (
-    <section ref={parentRef } className='w-screen h-[350vh] pt-[0px] relative flex flex-col justify-start  text-white  bg-black'>
+  return (<>
+    <section ref={parentRef }    className='w-screen h-[350vh] max-tablet:hidden pt-[0px] relative flex flex-col justify-start  text-white  overflow-x-clip bg-black'>
       {/* <span className='absolute ' >section start</span> */}
       
       <div className='sticky top-5'>
@@ -286,6 +286,8 @@ const Skills = () => {
       
       
     </section>
+    
+    </>
   );
 };
 

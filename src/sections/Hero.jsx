@@ -71,13 +71,13 @@ const Hero = () => {
       
       {/* BITMOJI CENTER */}
       <div className="absolute w-full  flex justify-center top-[10%] transform 
-                      max-tablet:top-[22%] max-tablet:z-50 
-                      max-phone:rotate-2
+                      max-tablet:top-[18%] max-tablet:z-50 
+                      max-phone:rotate-2 max-phone:top-[22%]
                        ">
       <motion.img
       src={bitmoji}
       alt="Bitmoji"
-      className="w-auto z-50 h-[450px] 2xl:h-[500px] max-tablet:h-[450px] mt-20  aspect-auto rounded-full shadow-lg
+      className="w-auto z-50 h-[450px] 2xl:h-[500px] max-tablet:h-[420px] mt-20  aspect-auto rounded-full shadow-lg
       max-phone:h-[320px] max-phone:mt-16 "
       style={{ pointerEvents: 'auto' }}
       whileTap={() => {
